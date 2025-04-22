@@ -59,9 +59,6 @@ class Student(StudentBase, table=True):
     course: Optional["Course"] = Relationship(back_populates="students")
 
 
-    def __str__(self):
-        return f"{self.name} {self.surname} ({self.age} años) - ID: {self.id}"
-
 
 class CourseCreate(CourseBase):
     pass

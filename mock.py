@@ -39,10 +39,6 @@ def create_samples():
         session.add(student_sara)
         session.commit()
 
-        print("DAM new student:", student_jordi)
-        print("DAM new student:", student_joan)
-        print("ASIR new student:", student_sara)
-
 
 def main():
     create_db_and_tables()
